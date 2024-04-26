@@ -56,7 +56,7 @@ align-items:center;
 padding-left:60px;
 padding-right:60px;
 padding-top:30px;
-background: url(img/background.svg) cover no-repeat;
+background: url(img/background.png) cover no-repeat;
 `
 const Query = styled.div`
 margin-left:-100px;
