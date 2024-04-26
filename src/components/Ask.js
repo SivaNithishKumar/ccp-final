@@ -1,27 +1,74 @@
-import React from 'react'
+import React , {useEffect,useState} from 'react'
 import styled from 'styled-components'
 import User from './User'
 
 
 
 function Ask() {
+
+    const [question, setQuestion] = useState('');
+    const [description, setDescription] = useState('');
+
+    const handleQuestionChange = (e) => {
+        setQuestion(e.target.value);
+        console.log(e.target.value);
+    };
+
+    const handleDescriptionChange = (e) => {
+        setDescription(e.target.value);
+    };
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault(); // Prevent default form submission behavior
+        try {
+            const response = await fetch('http://localhost:5000/api/postQues', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ "question" : question, "description" : description })
+            });
+
+            if (response.ok) {
+                console.log('Question added successfully!');
+                setQuestion(''); // Reset question input
+                setDescription(''); // Reset description input
+            } else {
+                console.error('Failed to add question');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
   return (
     <Container>
         <Users>
             <User src='img/img-3.svg' alt=""/>
         </Users>
         <Content>
-            <Question placeholder='Add you question / doubts here....'/>
-            <Desc placeholder='Description....'/>
+        <Question
+                    placeholder='Add your question / doubts here....'
+                    value={question}
+                    onChange={handleQuestionChange}
+                />
+                <Desc
+                    placeholder='Description....'
+                    value={description}
+                    onChange={handleDescriptionChange}
+                />
             <input required style={{ display: "none" }} type="file" id="file" />
             <Label htmlFor="file">
                 <img src='img/addAvatar.png' alt="" />
                 <span>Add an avatar</span>
             </Label>
-            <Button>Ignite</Button>
+            <Button onClick={handleSubmit}>Ignite</Button>
         </Content>
     </Container>
+
   )
+
+  
 }
 
 export default Ask
