@@ -114,7 +114,7 @@ span{
 font-family: Poppins;
 font-size: 12.986px;
 font-style: normal;
-font-weight: 700;
+font-weight: 500;
 line-height: normal;
 }
 }
@@ -138,6 +138,17 @@ position:absolute;
 right:10px;
 top:9px;
 display:flex;
+&::placeholder {
+    color: #FFF;
+font-family: Poppins;
+font-size: 14.872px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position:absolute;
+left:10px;
+opacity:0.7;
+  }
 
 `
 
@@ -188,4 +199,14 @@ display:flex;
 justify-content:space-evenly;
 align-items:center;
 flex-direction:column;
+padding:30px 0;
+div{
+    margin:10px 0 0 0;
+    color: #FFF;
+font-family: Poppins;
+font-size: 23.063px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 `

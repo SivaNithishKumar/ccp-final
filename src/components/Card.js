@@ -8,22 +8,41 @@ function Card() {
   return (
     <Container>
         <Users>
-            <div>
-
             <User src='img/img-3.svg' alt=""/>
-            </div>
         </Users>
         <Content>
             <Question>How to add a column on a Pandas DataFrame that is based on the continent a country ?</Question>
             <Desc>What I wanted to do is basically add a column of for all 7 continents, and I want the continents to be assigned based on where the country is located...</Desc>
             <Query>
-                <Input/>
-                <div>Be a hero, answer their question !</div>
+                <Input placeholder='Be a hero, answer their question !'/>
                 <button><span>Help Out</span></button>
         </Query>
         </Content>
         <Actions>
-            <Action></Action>
+            <Action>
+                <img src='img/like.svg'/>
+                <div>
+                    Like
+                </div>
+            </Action>
+            <Action>
+                <img src='img/answer.svg'/>
+                <div>
+                    Answer
+                </div>
+            </Action>
+            <Action>
+                <img src='img/share.svg'/>
+                <div>
+                    Share
+                </div>
+            </Action>
+            <Action>
+                <img src='img/user.svg'/>
+                <div>
+                    Hire
+                </div>
+            </Action>
         </Actions>
     </Container>
   )
@@ -44,16 +63,14 @@ margin-bottom:20px;
 `
 
 const Users = styled.div`
-div{
+padding-top:35px;
+width:20%;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     algin-items:center;
-}
-
 `
 const Content = styled.div`
-width: 494px;
+width: 600px;
 display:flex;
 flex-direction:column;
 justify-content:space-evenly;
@@ -86,12 +103,7 @@ div{
     margin-top:4px;
     right:140px;
     top:190px;
-    color: #FFF;
-font-family: Poppins;
-font-size: 17.872px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    
 }
 button{
     margin-top:2px;
@@ -108,9 +120,9 @@ top:193px;
 span{
     color: #FFF;
 font-family: Poppins;
-font-size: 12.986px;
+font-size: 10.986px;
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 line-height: normal;
 }
 }
@@ -128,13 +140,52 @@ position:absolute;
 right:30px;
 top:190px;
 display:flex;
-
+color: #FFF;
+font-family: Poppins;
+font-size: 17.872px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+&::placeholder {
+    color: #FFF;
+font-family: Poppins;
+font-size: 14.872px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position:absolute;
+left:10px;
+opacity:0.7;
+  }
 `
 
 
 const Actions = styled.div`
-
+width:20%;
+display:flex;
+flex-direction:column;
+justify-content:center;
 `
 const Action = styled.div`
-
+display:flex;
+justify-content:center;
+width: 150.501px;
+height: 35.784px;
+flex-shrink: 0;
+img{
+    width: 18.715px;
+    height: 19.049px;
+    flex-shrink: 0;
+    stroke-width: 2.105px;
+    stroke: #FFF;
+    margin: 0 10px;
+}
+div{
+    color: #FFF;
+font-family: Poppins;
+font-size: 16.944px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 `
