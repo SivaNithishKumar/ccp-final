@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container} from 'react-bootstrap'
 import styled from 'styled-components'
+import  { useEffect, useState } from 'react';
 import Card from '../components/Card'
 import User from '../components/User'
 import Tag from '../components/Tag'
@@ -8,6 +9,14 @@ import Tag from '../components/Tag'
 
 function Main() {
     const img1 = 'img/Ellipse 2 (1).svg'
+    const [questions, setQuestions] = useState([]);
+
+    useEffect(() => {
+      fetch('http://localhost:5000/api/questions')
+        .then(response => response.json())
+        .then(data => setQuestions(data))
+        .catch(error => console.error('Error:', error));
+    }, []);
 
 
 
@@ -48,8 +57,14 @@ function Main() {
                     <User src='img/img-6.svg' />
                 </Users>
                 <Cards>
-                    <Card />    
-                    <Card/>
+                {questions.map((question) => (
+        <Card
+          key={question._id}
+          src="img/img-3.svg" // Static image for now
+          question={question.question}
+          description={question.description}
+        />
+      ))}
                 </Cards>
                 
                 </Center>
