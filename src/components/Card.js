@@ -1,10 +1,15 @@
-import React from 'react'
+import React , {useState,useEffect} from 'react'
 import styled from 'styled-components'
 import User from './User'
 
 
 
 function Card({ src, question, description }) {
+    const [liked, setLiked] = useState(false);
+
+    const handleLike = () => {
+      setLiked(!liked);
+    };
   return (
     <Container>
         <Users>
@@ -19,26 +24,28 @@ function Card({ src, question, description }) {
             </Query>
         </Content>
         <Actions>
+        <Action onClick={handleLike}>
+        {liked ? (
+          <img src='img/liked.svg' alt='Liked' />
+        ) : (
+          <img src='img/like.svg' alt='Like' />
+        )}
+        <div>{liked ? 'Liked' : 'Like'}</div>
+      </Action>
             <Action>
-                <img src='img/like.svg' alt=''/>
-                <div>
-                    Like
-                </div>
-            </Action>
-            <Action>
-                <img src='img/answer.svg' alt=''/>
+                <img src='img/answer.svg'  alt=''/>
                 <div>
                     Answer
                 </div>
             </Action>
             <Action>
-                <img src='img/share.svg' alt=''/>
+                <img src='img/share.svg'  alt=''/>
                 <div>
                     Share
                 </div>
             </Action>
             <Action>
-                <img src='img/user.svg' alt=''/>
+                <img src='img/user.svg'  alt=''/>
                 <div>
                     Hire
                 </div>
