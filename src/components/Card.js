@@ -20,25 +20,25 @@ function Card({ src, question, description }) {
         </Content>
         <Actions>
             <Action>
-                <img src='img/like.svg'/>
+                <img src='img/like.svg' alt=''/>
                 <div>
                     Like
                 </div>
             </Action>
             <Action>
-                <img src='img/answer.svg'/>
+                <img src='img/answer.svg' alt=''/>
                 <div>
                     Answer
                 </div>
             </Action>
             <Action>
-                <img src='img/share.svg'/>
+                <img src='img/share.svg' alt=''/>
                 <div>
                     Share
                 </div>
             </Action>
             <Action>
-                <img src='img/user.svg'/>
+                <img src='img/user.svg' alt=''/>
                 <div>
                     Hire
                 </div>

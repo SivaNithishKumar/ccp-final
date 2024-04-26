@@ -24,7 +24,7 @@ function Main() {
 
 
   return (
-    <Container style={{backgroundImage:'url(img/background-main.png)'}}>
+    <Container style={{height:'100%' , backgroundImage:'url(img/background-main.png)'}}>
         <Nav>
         <Title>Collab Cafe</Title>
         <Query>
