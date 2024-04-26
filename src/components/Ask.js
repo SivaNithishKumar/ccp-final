@@ -20,6 +20,7 @@ function Ask() {
 
 
     const handleSubmit = async (e) => {
+        alert('hiiiiii');
         e.preventDefault(); // Prevent default form submission behavior
         try {
             const response = await fetch('http://localhost:5000/api/postQues', {
@@ -99,6 +100,7 @@ font-size: 13.017px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+cursor:pointer;
 
 `
 
