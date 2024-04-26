@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Card from '../components/Card'
 import User from '../components/User'
 import Tag from '../components/Tag'
+import Ask from '../components/Ask'
 
 
 function Main() {
@@ -14,12 +15,12 @@ function Main() {
 
 
   return (
-    <Container style={{height:'200vh',backgroundColor:'radial-gradient(#13003C,)'}}>
+    <Container style={{height:'100%',backgroundImage:'url(img/background-main.png)'}}>
         <Nav>
         <Title>Collab Cafe</Title>
         <Query>
             <Input placeholder='Brain stuck? Find your spark here !' />
-            {/* <div>Brain stuck? Find your spark here !</div> */}
+
             <button><span>IGNITE</span></button>
         </Query>
         </Nav>
@@ -53,7 +54,10 @@ function Main() {
                     <User src='img/img-3.svg' />                    
                 </Users>
                 <Cards>
+                    <Ask/>
                     <Card />    
+                    <Card/>
+                    <Card/>
                     <Card/>
                 </Cards>
                 
@@ -175,6 +179,8 @@ width: 722px;
 flex-shrink: 0;
 `
 const Body = styled.div`
+postion:absolute:
+z-index:3;
 display:flex;
 justify-content:space-between;
 `
