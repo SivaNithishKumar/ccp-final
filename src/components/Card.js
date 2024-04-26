@@ -4,19 +4,19 @@ import User from './User'
 
 
 
-function Card() {
+function Card({ src, question, description }) {
   return (
     <Container>
         <Users>
-            <User src='img/img-3.svg' alt=""/>
+            <User src={src} alt=""/>
         </Users>
         <Content>
-            <Question>How to add a column on a Pandas DataFrame that is based on the continent a country ?</Question>
-            <Desc>What I wanted to do is basically add a column of for all 7 continents, and I want the continents to be assigned based on where the country is located...</Desc>
+            <Question>{question}</Question>
+            <Desc>{description}</Desc>
             <Query>
                 <Input placeholder='Be a hero, answer their question !'/>
                 <button><span>Help Out</span></button>
-        </Query>
+            </Query>
         </Content>
         <Actions>
             <Action>
