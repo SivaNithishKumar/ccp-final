@@ -14,7 +14,7 @@ function Main() {
 
 
   return (
-    <Container style={{height:'200vh',backgroundColor:'#13003C'}}>
+    <Container style={{height:'200vh',backgroundColor:'radial-gradient(#13003C,)'}}>
         <Nav>
         <Title>Collab Cafe</Title>
         <Query>
@@ -25,14 +25,14 @@ function Main() {
         </Nav>
         <Body >
             <Left>
-                <Profile>
+                <Profile src='img/profile.png'>
+{/*                     
                     <User src='img/img-3.svg' alt=''/>
-                    <div>User</div>
+                    <div>User</div> */}
                 </Profile>
             </Left>
             <Center>
                 <Tags>
-                    <Tag/>
                     <Tag/>
                     <Tag/>
                     <Tag/>
@@ -45,7 +45,12 @@ function Main() {
                     <User src='img/img-4.svg' />
                     <User src={img1} />
                     <User src='img/img-5.svg' />
-                    <User src='img/img-6.svg' />
+                    <User src='img/img-3.svg' />
+                    <User src='img/img-4.svg' />
+                    <User src={img1} />
+                    <User src='img/img-5.svg' />
+                    <User src='img/Ellipse 2.svg' />
+                    <User src='img/img-3.svg' />                    
                 </Users>
                 <Cards>
                     <Card />    
@@ -53,7 +58,9 @@ function Main() {
                 </Cards>
                 
                 </Center>
-            <Right></Right>
+            <Right>
+                <Chat src='img/chat.png'></Chat>
+            </Right>
         </Body>
     </Container>
   )
@@ -194,19 +201,18 @@ display:flex;
 justify-content:space-between;
 `
 
-const Profile = styled.div`
-display:flex;
-justify-content:space-evenly;
-align-items:center;
-flex-direction:column;
-padding:30px 0;
-div{
-    margin:10px 0 0 0;
-    color: #FFF;
-font-family: Poppins;
-font-size: 23.063px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
+const Profile = styled.img`
+postion:absolute:
+z-index:-1;
+width:100%;
+border-radius: 0px 12px 12px 0px;
+background: rgba(73, 73, 73, 0.28);
+opacity:0.7;
+`
+
+const Chat = styled.img`
+border-radius: 12px 0px 0px 12px;
+background: rgba(73, 73, 73, 0.28);
+width: 300px;
+opacity:0.7;
 `
