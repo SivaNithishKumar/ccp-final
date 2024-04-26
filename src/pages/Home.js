@@ -1,9 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import { useNavigate, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 function Home() {
-    const navigate = useNavigate();
 
   return (
     <Container >
@@ -167,10 +166,4 @@ font-style: normal;
 font-weight: 900;
 line-height: normal;
 }
-`
-const LinearGradient = styled.div``
-
-const View = styled.div`
-`
-const Text= styled.div`
 `

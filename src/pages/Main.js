@@ -24,7 +24,7 @@ function Main() {
 
 
   return (
-    <Container style={{height:'100%',backgroundImage:'url(img/background-main.png)'}}>
+    <Container style={{backgroundImage:'url(img/background-main.png)'}}>
         <Nav>
         <Title>Collab Cafe</Title>
         <Query>
@@ -63,13 +63,8 @@ function Main() {
                     <User src='img/img-3.svg' />                    
                 </Users>
                 <Cards>
-<<<<<<< HEAD
                     <Ask/>
-                    <Card />    
-                    <Card/>
-                    <Card/>
-                    <Card/>
-=======
+
                 {questions.map((question) => (
         <Card
           key={question._id}
@@ -78,7 +73,7 @@ function Main() {
           description={question.description}
         />
       ))}
->>>>>>> 4baabec1b83d5c729480ecacf7ee340257844818
+
                 </Cards>
                 
                 </Center>
