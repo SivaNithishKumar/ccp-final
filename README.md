@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Collaborative Community Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem Statement
+In today's competitive academic landscape, students often face challenges in keeping pace with their studies. Many experience feelings of isolation, impacting both academic performance and mental well-being. There is a need for a platform that fosters collaboration, skill exchange, and networking among students and faculties within the university.
 
-## Available Scripts
+## Proposed Solution
+Our project seeks to establish a collaborative community among students and faculties within our university through the development of a website. The platform will facilitate student interaction, skill exchange, hiring opportunities, and offline connections on campus. By fostering a collaborative culture, we aim to enrich the educational experience and promote a supportive campus environment.
 
-In the project directory, you can run:
+## Prototype
+[Link to Figma prototype](https://www.figma.com/proto/enGwUbIfxBrfEzEfYPe3bl/Untitled?page-id=0%3A1&type=design&node-id=73-521&viewport=108%2C282%2C0.46&t=7dJOnTfFRQOGdPjA-1&scaling=scale-down&mode=design)
 
-### `npm start`
+![image](https://github.com/SivaNithishKumar/ccp-final/assets/136327019/93ae9fb5-6262-4890-9eef-52d9a2081f6d)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://github.com/SivaNithishKumar/ccp-final/assets/136327019/4d257bfa-ca59-45a5-b35d-3592ae24d814)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/SivaNithishKumar/ccp-final/assets/136327019/0a85ca33-547f-49df-b9b2-7e02565d855f)
 
-### `npm test`
+![image](https://github.com/SivaNithishKumar/ccp-final/assets/136327019/835044ae-47aa-4009-a608-3243e1ed3066)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
+- Frontend: React
+- Backend: MongoDB
+- Design: Figma
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+1. [Sivanithish](https://github.com/SivaNithishKumar)
+2. [Rajesh](https://github.com/rajesh-05)
+3. [Jaiguru](https://github.com/jai2992)
+4. [Harshavardhini](https://github.com/Harshsa04)
