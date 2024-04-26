@@ -8,7 +8,7 @@ const app = express();
 const PORT = 5000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/ColabCafe', {
+mongoose.connect('mongodb://localhost:27017/colab-cafe', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
